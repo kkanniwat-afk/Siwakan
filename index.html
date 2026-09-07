@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สรุปผลการดำเนินการตามข้อตกลงในการพัฒนางาน (PA) — นายศิวกานต์ เชิดบุญเรือง</title>
+<!-- External CDN: Google Fonts (Noto Sans Thai / IBM Plex Sans Thai) — ถ้าไม่มีอินเทอร์เน็ตจะ fallback เป็นฟอนต์ไทยของระบบ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B2545; --navy2:#123B65; --blue:#1D4E89; --blue2:#2E7DA6;
+  --teal:#1F8E80; --teal-l:#2A9D8F; --amber:#C98A1E; --red:#A93B38;
+  --paper:#FFFFFF; --mist:#EDF1F6; --line:#CFD9E5;
+  --ink:#101B26; --ink2:#41536A;
+  --sh:0 10px 26px rgba(11,37,69,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:"Noto Sans Thai","IBM Plex Sans Thai","Sarabun","Leelawadee UI",Tahoma,sans-serif;
+  background:#0A1724;color:var(--ink);overflow:hidden;-webkit-font-smoothing:antialiased;
+}
+/* ---------- เวที 16:9 ---------- */
+#viewport{position:fixed;left:0;right:0;top:0;bottom:58px;display:grid;place-items:center;overflow:hidden}
+#stage{width:1280px;height:720px;position:relative;transform-origin:center center;
+  background:var(--mist);box-shadow:0 30px 70px rgba(0,0,0,.45);border-radius:6px;overflow:hidden}
+.slide{position:absolute;inset:0;display:none;flex-direction:column;padding:40px 56px 34px;background:var(--mist);overflow:hidden}
+.slide.active{display:flex;animation:in .34s cubic-bezier(.2,.7,.3,1)}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.slide.active{animation:none}}
+.fit{display:flex;flex-direction:column;flex:1;min-height:0;transform-origin:top left}
+
+/* ---------- ตัวอักษร ---------- */
+.eyebrow{color:var(--teal);font-weight:700;font-size:16px;letter-spacing:.01em;margin-bottom:2px}
+h1{font-size:52px;line-height:1.2;font-weight:800;color:var(--navy)}
+h2{font-size:34px;line-height:1.22;font-weight:800;color:var(--navy)}
+h3{font-size:19px;font-weight:700;color:var(--navy);line-height:1.35}
+p,li,td,th{font-size:17px;line-height:1.6;color:var(--ink)}
+.sm{font-size:16px;line-height:1.55}
+.sub{color:var(--ink2)}
+.head{border-bottom:3px solid var(--line);padding-bottom:12px;margin-bottom:20px}
+.head p{color:var(--ink2);margin-top:6px;font-size:17px;max-width:100ch}
+.body{flex:1;min-height:0;display:flex;flex-direction:column;gap:16px}
+
+/* ---------- การ์ด ---------- */
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--sh)}
+.card.tint{background:linear-gradient(180deg,#fff,#F6FAFD)}
+.card .num{font-size:46px;font-weight:800;color:var(--blue);line-height:1.05}
+.card .num small{font-size:17px;font-weight:700;color:var(--ink2);margin-left:6px}
+.card .lbl{font-size:16px;color:var(--ink2);margin-top:4px}
+.card ul{margin:8px 0 0 20px}
+.card li{margin-bottom:6px;font-size:16.5px;line-height:1.55}
+.ico{width:40px;height:40px;display:grid;place-items:center;border-radius:11px;background:#E3EFF8;color:var(--blue);margin-bottom:10px}
+.ico svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.ico.t{background:#DDF1EE;color:var(--teal)}
+.ico.a{background:#FAF0DA;color:#8F6415}
+.ico.r{background:#FAE6E5;color:var(--red)}
+
+/* ---------- ปก ---------- */
+#s1{background:radial-gradient(1000px 620px at 84% -12%,#1D4E89 0%,transparent 62%),linear-gradient(158deg,#0B2545 0%,#0E3059 56%,#0B2545 100%);justify-content:center}
+#s1 h1{color:#fff;max-width:17ch}
+#s1 .rule{width:78px;height:5px;background:var(--teal-l);border-radius:3px;margin:20px 0}
+.cover-top{color:#A8C7E2;font-weight:600;letter-spacing:.05em;font-size:17px}
+#s1 .lead{color:#C5DCEF;margin-top:14px;font-size:21px;line-height:1.5;max-width:56ch}
+.cover-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 26px;margin-top:26px;max-width:1000px}
+.cover-meta div{border-left:2px solid rgba(255,255,255,.26);padding-left:14px}
+.cover-meta span{display:block;color:#93B6D5;font-size:15px;margin-bottom:2px}
+.cover-meta b{color:#fff;font-weight:600;font-size:18px}
+#s1 .seal{position:absolute;right:-110px;top:50%;transform:translateY(-50%);width:520px;height:520px;border:1px solid rgba(255,255,255,.11);border-radius:50%;pointer-events:none}
+#s1 .seal:after{content:"";position:absolute;inset:16%;border:1px solid rgba(255,255,255,.09);border-radius:50%}
+
+/* ---------- ปุ่ม Drive ---------- */
+.drive{display:inline-flex;align-items:center;gap:11px;background:var(--teal);color:#fff;text-decoration:none;font-weight:700;font-size:17px;
+  padding:13px 22px;border-radius:12px;box-shadow:0 10px 24px rgba(31,142,128,.36);margin-top:24px;transition:transform .15s}
+.drive:hover,.drive:focus{transform:translateY(-2px)}
+.drive svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.drive small{display:block;font-weight:500;opacity:.9;font-size:13.5px}
+
+/* ---------- ขั้นตอน ---------- */
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.step{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:12px;padding:14px 15px;box-shadow:var(--sh)}
+.step:nth-child(n+4){border-top-color:var(--teal)}
+.step b{display:block;font-size:26px;color:#C3CFDD;font-weight:800;line-height:1}
+.step h3{margin:4px 0 6px;font-size:17.5px}
+.step p{font-size:15.5px;color:var(--ink2);line-height:1.5}
+
+/* ---------- PANIC ---------- */
+.panic{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.pcard{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--sh)}
+.pletter{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-weight:800;font-size:24px;color:#fff;background:var(--navy);margin-bottom:10px}
+.pcard:nth-child(2) .pletter{background:var(--blue)}
+.pcard:nth-child(3) .pletter{background:var(--blue2)}
+.pcard:nth-child(4) .pletter{background:var(--teal)}
+.pcard:nth-child(5) .pletter{background:#3AA98F}
+.pcard .en{color:var(--ink2);font-size:15px;margin:2px 0 6px}
+.pcard p{font-size:15.5px;line-height:1.5}
+
+/* ---------- แถบกราฟ ---------- */
+.bars{display:flex;flex-direction:column;gap:11px}
+.bar-row{display:grid;grid-template-columns:340px 1fr;gap:16px;align-items:center}
+.bar-row .name{font-size:16.5px;line-height:1.4;color:var(--ink)}
+.track{position:relative;height:30px;background:#DCE4EE;border-radius:8px;overflow:hidden}
+.fill{position:absolute;inset:0 auto 0 0;width:0;border-radius:8px;background:linear-gradient(90deg,var(--blue),var(--blue2));
+  display:flex;align-items:center;justify-content:flex-end;padding-right:12px;color:#fff;font-weight:700;font-size:16px;transition:width .9s cubic-bezier(.2,.7,.3,1)}
+.fill.teal{background:linear-gradient(90deg,#146F63,var(--teal-l))}
+.fill.amber{background:linear-gradient(90deg,#9A6A11,#D6A02C)}
+.axis{display:flex;justify-content:space-between;color:var(--ink2);font-size:15px;margin-top:8px;border-top:1px solid var(--line);padding-top:6px}
+.legend{display:flex;gap:22px;flex-wrap:wrap;margin-top:12px;font-size:15.5px;color:var(--ink2)}
+.legend i{display:inline-block;width:13px;height:13px;border-radius:3px;margin-right:7px;vertical-align:-2px}
+
+/* ---------- Before / After ---------- */
+.ba{display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr;gap:10px;align-items:stretch}
+.ba .arrow{display:grid;place-items:center;color:#8895A8;font-size:26px;font-weight:700}
+.ba .col{border-radius:14px;padding:18px;border:1px solid var(--line);background:var(--paper);box-shadow:var(--sh)}
+.ba .col.before{background:#FCF1F1;border-color:#EBCFCE}
+.ba .col.after{background:#EAF6F3;border-color:#C4E4DC}
+.ba ul{margin:8px 0 0 20px}
+.ba li{font-size:16px;line-height:1.5;margin-bottom:5px}
+
+/* ---------- อื่น ๆ ---------- */
+.note{background:#FFF7E6;border:1px solid #EBD8AE;border-left:6px solid var(--amber);border-radius:10px;padding:12px 16px;font-size:16px;color:#5C4712;line-height:1.55}
+.empty{border:2px dashed var(--line);background:#F8FBFD;border-radius:14px;padding:16px 18px}
+.empty .state{color:#7C8CA0;font-weight:700;font-size:15px;margin-bottom:4px}
+.quote{background:var(--navy);color:#fff;border-radius:14px;padding:20px 24px}
+.quote p{color:#DDEAF5;font-size:19px;line-height:1.65}
+.quote .mark{color:var(--teal-l);font-size:40px;line-height:.5;display:block;margin-bottom:10px;font-weight:800}
+table{width:100%;border-collapse:collapse;background:var(--paper);border-radius:12px;overflow:hidden;box-shadow:var(--sh)}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);font-size:16.5px;line-height:1.45}
+th{background:var(--navy);color:#fff;font-weight:600;font-size:16px}
+tr:last-child td{border-bottom:none}
+td.n{font-weight:700;color:var(--blue);white-space:nowrap}
+.badge{display:inline-block;background:#FFF0D2;color:#7A5A0E;border:1px solid #E7CE94;border-radius:999px;padding:5px 14px;font-size:15px;font-weight:700}
+
+/* ---------- ความพึงพอใจ ---------- */
+.score{background:linear-gradient(160deg,var(--navy),#16456F);color:#fff;border-radius:16px;padding:22px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.score .big{font-size:76px;font-weight:800;line-height:1;color:#fff}
+.score .of{font-size:20px;color:#A9C8E2;margin-top:2px}
+.score .lv{margin-top:12px;background:var(--teal-l);color:#fff;font-weight:700;font-size:19px;padding:7px 18px;border-radius:999px}
+.score .cap{margin-top:12px;color:#BBD4EA;font-size:15.5px;line-height:1.5}
+.vcard{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:12px;padding:15px 17px;box-shadow:var(--sh)}
+.vcard p{font-size:17px;line-height:1.55}
+.vcard .who{color:var(--ink2);font-size:14.5px;margin-top:8px}
+.theme{display:inline-block;background:#DDF1EE;color:#146F63;border-radius:999px;padding:6px 15px;font-size:16px;font-weight:700;margin:4px 6px 0 0}
+
+/* ---------- แถบควบคุม ---------- */
+#bar{position:fixed;left:0;right:0;bottom:0;height:58px;background:#0F2439;border-top:1px solid #1E3B58;
+  display:flex;align-items:center;gap:8px;padding:0 18px;z-index:40}
+#bar button{border:1px solid #2A4B6C;background:#15304A;color:#DCEAF6;border-radius:9px;height:38px;min-width:38px;padding:0 14px;
+  font-family:inherit;font-size:15.5px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
+#bar button:hover{background:#1D4064}
+#bar button:focus-visible{outline:3px solid var(--teal-l);outline-offset:2px}
+#counter{margin-left:auto;margin-right:8px;font-size:15.5px;color:#9FBBD4;font-weight:600;white-space:nowrap}
+#bar svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#progress{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,var(--teal-l),var(--blue2));width:0;z-index:60;transition:width .3s}
+#menu{position:fixed;inset:0;background:rgba(8,25,42,.97);z-index:70;display:none;padding:40px 48px;overflow-y:auto}
+#menu.open{display:block}
+#menu h2{color:#fff;margin-bottom:18px}
+#menu ol{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px}
+#menu li button{width:100%;text-align:left;background:transparent;border:1px solid rgba(255,255,255,.2);color:#DCEAF6;border-radius:10px;
+  padding:11px 14px;font-family:inherit;font-size:16px;cursor:pointer;display:flex;gap:10px}
+#menu li button:hover{background:rgba(255,255,255,.09);color:#fff}
+#menu li button span{color:var(--teal-l);font-weight:700;min-width:26px}
+#menu .close{position:absolute;top:20px;right:24px;background:transparent;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:9px;padding:9px 16px;cursor:pointer;font-family:inherit;font-size:15.5px}
+@media (max-width:640px){#bar button.txt span{display:none}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div id="viewport"><div id="stage">
+
+<!-- 1 ปก -->
+<section class="slide active" id="s1" data-title="ปก">
+  <div class="seal"></div>
+  <div style="position:relative;z-index:2">
+    <div class="cover-top">แบบ PA 1/ส · สำนักงานคณะกรรมการการอาชีวศึกษา</div>
+    <div class="rule"></div>
+    <h1>สรุปผลการดำเนินการตามข้อตกลงในการพัฒนางาน (PA)</h1>
+    <p class="lead">ประเด็นท้าทาย: การพัฒนาทักษะการนำเสนอโครงงานภาษาอังกฤษด้วย PANIC Framework</p>
+    <div class="cover-meta">
+      <div><span>ผู้จัดทำข้อตกลง</span><b>นายศิวกานต์ เชิดบุญเรือง</b></div>
+      <div><span>ตำแหน่ง</span><b>ครู (ยังไม่มีวิทยฐานะ)</b></div>
+      <div><span>สถานศึกษา</span><b>วิทยาลัยอาชีวศึกษาพระนครศรีอยุธยา</b></div>
+      <div><span>ปีงบประมาณ</span><b>พ.ศ. 2569</b></div>
+      <div><span>รอบการประเมิน</span><b>1 ต.ค. 2568 – 30 ก.ย. 2569</b></div>
+      <div><span>กลุ่มเป้าหมาย</span><b>ปวส.1 การบัญชี · วิชา 30000-1202</b></div>
+    </div>
+    <a class="drive" href="https://drive.google.com/file/d/1O6Im4-jYQ4-wUshZ7pXAIQ4EO8FXMvqr/view?usp=sharing" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M14 3v5h5"/><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9l6 6v10a2 2 0 0 1-2 2z"/><path d="M9 14h6"/><path d="M9 17h4"/></svg>
+      <span>เปิดเอกสาร PA ฉบับเต็ม<small>เปิดใน Google Drive แท็บใหม่</small></span>
+    </a>
+  </div>
+</section>
+
+<!-- 2 ภาพรวม -->
+<section class="slide" data-title="ภาพรวม PA">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">ภาพรวม</div><h2>PA at a Glance</h2>
+    <p>ตัวเลขสำคัญของข้อตกลงในการพัฒนางาน ปีงบประมาณ 2569 อ้างอิงตามที่ระบุในเอกสาร PA 1/ส</p></div>
+  <div class="body">
+    <div class="grid g4">
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div class="num">35<small>ชม./สัปดาห์</small></div><div class="lbl">ภาระงานรวมตามเอกสาร</div></div>
+      <div class="card"><div class="ico t"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></div><div class="num">4<small>รายวิชา</small></div><div class="lbl">ภาษาอังกฤษ ระดับ ปวช. และ ปวส.</div></div>
+      <div class="card"><div class="ico a"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div><div class="num">70<small>%</small></div><div class="lbl">เกณฑ์เป้าหมายหลักของผู้เรียน</div></div>
+      <div class="card"><div class="ico r"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></div><div class="num">5<small>โมดูล</small></div><div class="lbl">P · A · N · I · C ของนวัตกรรม</div></div>
+    </div>
+    <div class="grid g3">
+      <div class="card tint"><h3>กลุ่มเป้าหมาย</h3><p class="sm sub" style="margin-top:6px">นักเรียน ปวส.1 แผนกวิชาการบัญชี รายวิชาการเขียนและการนำเสนอโครงงานภาษาอังกฤษ (30000-1202) ภาคเรียนที่ 2/2568</p></div>
+      <div class="card tint"><h3>นวัตกรรมหลัก</h3><p class="sm sub" style="margin-top:6px">PANIC Framework พร้อมชุดเครื่องมือการนำเสนอ (PANIC Presentation Toolkit) ใบงาน 5 ชิ้น และแผนการจัดการเรียนรู้ 5 แผน</p></div>
+      <div class="card tint"><h3>การวัดผล</h3><p class="sm sub" style="margin-top:6px">PANIC Rubric 5 ด้าน ประเมินตามสภาพจริงจากการนำเสนอโครงงาน ร่วมกับแบบประเมินตนเองก่อน–หลังเรียน</p></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 3 ภาระงาน -->
+<section class="slide" data-title="ภาระงานตามมาตรฐานตำแหน่ง">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">ส่วนที่ 1 · ข้อ 1</div><h2>ภาระงานตามที่ ก.ค.ศ. กำหนด</h2>
+    <p>โครงสร้างภาระงานใน 1 รอบการประเมิน แยกตามชั่วโมงสอนและงานสนับสนุน</p></div>
+  <div class="body">
+    <div class="grid g2" style="align-items:start">
+      <div>
+        <h3 style="margin-bottom:10px">1.1 ชั่วโมงสอนตามตารางสอน</h3>
+        <table>
+          <tr><th>รหัสวิชา</th><th>รายวิชา</th><th style="text-align:right">ชม./สัปดาห์</th></tr>
+          <tr><td class="n">20000-1202</td><td>ภาษาอังกฤษโครงงานบูรณาการวิชาชีพ</td><td class="n" style="text-align:right">2</td></tr>
+          <tr><td class="n">30000-1201</td><td>ภาษาอังกฤษสำหรับงานอาชีพ</td><td class="n" style="text-align:right">3</td></tr>
+          <tr><td class="n">30000-1202</td><td>การเขียนและการนำเสนอโครงงานภาษาอังกฤษ</td><td class="n" style="text-align:right">12</td></tr>
+          <tr><td class="n">30000-1206</td><td>ภาษาอังกฤษเทคโนโลยีธุรกิจดิจิทัล</td><td class="n" style="text-align:right">4</td></tr>
+        </table>
+        <p class="sm sub" style="margin-top:10px">เอกสารระบุระดับ ปวช. 2 ชั่วโมง และระดับ ปวส. 19 ชั่วโมง รวมภาระงานทั้งหมด 35 ชั่วโมง/สัปดาห์</p>
+      </div>
+      <div class="grid" style="gap:12px">
+        <div class="card"><h3>1.2 งานส่งเสริมและสนับสนุนการจัดการเรียนรู้ · 2 ชม.</h3><p class="sm sub" style="margin-top:5px">เข้าร่วมกิจกรรมชุมชนการเรียนรู้ทางวิชาชีพ (PLC)</p></div>
+        <div class="card"><h3>1.3 งานพัฒนาคุณภาพการจัดการศึกษา · 4 ชม.</h3><p class="sm sub" style="margin-top:5px">ปฏิบัติหน้าที่ผู้ช่วยหัวหน้างานครูที่ปรึกษา 2 ชั่วโมง/สัปดาห์</p></div>
+        <div class="card"><h3>1.4 งานตอบสนองนโยบายและจุดเน้น · 2 ชม.</h3><p class="sm sub" style="margin-top:5px">กิจกรรมชาติ ศาสนา และพระมหากษัตริย์ และงานอื่นตามที่ได้รับมอบหมาย</p></div>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 4 ปัญหา -->
+<section class="slide" data-title="ปัญหาและบริบท">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">จุดเริ่มต้น</div><h2>สภาพปัญหาการจัดการเรียนรู้</h2>
+    <p>บริบท → ปัญหา → ความจำเป็น ของผู้เรียน ปวส.1 การบัญชี ภาคเรียนที่ 2/2568</p></div>
+  <div class="body">
+    <div class="grid g3">
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M6 20V9M12 20V4M18 20v-7"/></svg></div><h3>บริบท (Context)</h3><p class="sm" style="margin-top:6px">ผู้เรียนสายบัญชีมี <b>จุดแข็งด้านข้อมูล</b> เพราะคุ้นเคยกับตัวเลขและข้อมูลทางการบัญชี</p></div>
+      <div class="card" style="border-top:4px solid var(--red)"><div class="ico r"><svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 9v5M12 17h.01"/></svg></div><h3>ปัญหา (Problem)</h3><p class="sm" style="margin-top:6px">แต่มีจุดอ่อนชัดเจนในการ <b>สื่อสารข้อมูลออกมา</b> ขาดการวางแผนการนำเสนออย่างเป็นระบบ</p></div>
+      <div class="card"><div class="ico t"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="4"/></svg></div><h3>ความจำเป็น (Need)</h3><p class="sm" style="margin-top:6px">ต้องมี <b>เครื่องมือ</b> ช่วยให้ผู้เรียนวางแผนการนำเสนอเป็นขั้นตอน จึงเป็นที่มาของ PANIC Framework</p></div>
+    </div>
+    <div class="grid g4">
+      <div class="card" style="background:#FCF1F1;border-color:#EBCFCE"><h3 style="color:#8E3936;font-size:18px">ไม่ชัดเจนใน Purpose</h3><p class="sm" style="margin-top:5px">ระบุวัตถุประสงค์ของการนำเสนอไม่ได้</p></div>
+      <div class="card" style="background:#FCF1F1;border-color:#EBCFCE"><h3 style="color:#8E3936;font-size:18px">ไม่วิเคราะห์ Audience</h3><p class="sm" style="margin-top:5px">ไม่พิจารณาว่ากำลังนำเสนอให้ใครฟัง</p></div>
+      <div class="card" style="background:#FCF1F1;border-color:#EBCFCE"><h3 style="color:#8E3936;font-size:18px">ไม่ทราบ Needs ผู้ฟัง</h3><p class="sm" style="margin-top:5px">ไม่รู้ว่าผู้ฟังคาดหวังอะไรจากการนำเสนอ</p></div>
+      <div class="card" style="background:#FCF1F1;border-color:#EBCFCE"><h3 style="color:#8E3936;font-size:18px">เกิดการ “เทข้อมูล”</h3><p class="sm" style="margin-top:5px">Data Dumping ทำให้ผู้ฟังไม่เข้าใจประเด็นสำคัญ</p></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 5 เป้าหมาย -->
+<section class="slide" data-title="เป้าหมายการพัฒนา">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">ส่วนที่ 2 · ประเด็นท้าทาย</div><h2>เป้าหมายการพัฒนา</h2><p>พัฒนาอะไร · กับใคร · ให้เกิดผลอะไร</p></div>
+  <div class="body">
+    <div class="grid g3">
+      <div class="card tint"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 5l14 3-14 3"/></svg></div><h3>พัฒนาอะไร</h3><p class="sm" style="margin-top:6px">ทักษะการนำเสนอโครงงานภาษาอังกฤษอย่างเป็นระบบ ด้วย PANIC Framework</p></div>
+      <div class="card tint"><div class="ico t"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 6a3 3 0 0 1 0 6"/></svg></div><h3>พัฒนาใคร</h3><p class="sm" style="margin-top:6px">นักเรียน ปวส.1 แผนกวิชาการบัญชี รายวิชา 30000-1202 ภาคเรียนที่ 2/2568</p></div>
+      <div class="card tint"><div class="ico a"><svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg></div><h3>ให้เกิดผลอะไร</h3><p class="sm" style="margin-top:6px">เปลี่ยนจากการ “เทข้อมูล” เป็น “การสื่อสารเชิงกลยุทธ์” และมีความมั่นใจเพิ่มขึ้น</p></div>
+    </div>
+    <div class="grid g2">
+      <div class="card"><h3>ผลลัพธ์ที่คาดหวังเชิงปริมาณ</h3><ul>
+        <li>ไม่น้อยกว่า <b>ร้อยละ 70</b> ของผู้เรียนกลุ่มเป้าหมาย มีผลประเมินด้วย PANIC Rubric ผ่านเกณฑ์ระดับคุณภาพ “ดี” ขึ้นไป</li>
+        <li>คะแนนเฉลี่ยแบบทดสอบวัดความเข้าใจหลักการนำเสนอ <b>หลังเรียนสูงกว่าก่อนเรียน</b></li></ul></div>
+      <div class="card"><h3>ผลลัพธ์ที่คาดหวังเชิงคุณภาพ</h3><ul>
+        <li>อธิบาย Purpose, Audience, Needs, Information และแผน Communication ของตนเองได้ชัดเจน</li>
+        <li>คัดเลือกข้อมูล (I) ตอบสนองความต้องการ (N) ของผู้ฟัง (A) เพื่อบรรลุวัตถุประสงค์ (P)</li>
+        <li>มีความมั่นใจและเจตคติที่ดีต่อการนำเสนอเพิ่มขึ้น</li></ul></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 6 กระบวนการ -->
+<section class="slide" data-title="กระบวนการดำเนินงาน">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">วิธีการดำเนินการให้บรรลุผล</div><h2>6 ขั้นตอนของการดำเนินงาน</h2><p>ลำดับการทำงานตั้งแต่วิเคราะห์หลักสูตรจนถึงการสะท้อนผล</p></div>
+  <div class="body">
+    <div class="flow">
+      <div class="step"><b>1</b><h3>Analyze</h3><p>วิเคราะห์หลักสูตรรายวิชา 30000-1202 และวิเคราะห์ผู้เรียน เพื่อระบุช่องว่างของทักษะ</p></div>
+      <div class="step"><b>2</b><h3>Design</h3><p>สร้าง PANIC Framework และออกแบบชุดเครื่องมือการนำเสนอ ใบงาน 5 ส่วน</p></div>
+      <div class="step"><b>3</b><h3>Develop</h3><p>พัฒนาแผนการจัดการเรียนรู้ 5 แผนตามโมดูล PANIC พร้อมสไลด์และคลิปตัวอย่าง</p></div>
+      <div class="step"><b>4</b><h3>Create Tool</h3><p>สร้าง Presentation Rubric 5 ด้าน และแบบประเมินตนเองก่อน–หลังเรียน</p></div>
+      <div class="step"><b>5</b><h3>Implement</h3><p>ใช้จริงในภาคเรียนที่ 2/2568 ด้วย Active Learning การอัดวิดีโอตนเอง และ Peer Feedback</p></div>
+      <div class="step"><b>6</b><h3>Evaluate &amp; Reflect</h3><p>ประเมินด้วย Rubric จากการนำเสนอจริง และเปรียบเทียบคะแนนก่อน–หลังเรียน</p></div>
+    </div>
+    <div class="note">ขั้นตอนทั้งหมดอ้างอิงจากหัวข้อ “วิธีการดำเนินการให้บรรลุผล” ในส่วนที่ 2 ของเอกสาร PA</div>
+  </div>
+ </div>
+</section>
+
+<!-- 7 PANIC -->
+<section class="slide" data-title="นวัตกรรม PANIC Framework">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">นวัตกรรมหลัก</div><h2>PANIC Framework</h2><p>แผนการสอนแบ่งเป็น 5 โมดูลย่อยตามตัวอักษร แต่ละโมดูลมีกิจกรรมเฉพาะของตนเอง</p></div>
+  <div class="body">
+    <div class="panic">
+      <div class="pcard"><div class="pletter">P</div><h3>Purpose</h3><div class="en">วัตถุประสงค์</div><p>Workshop “ตั้งธงให้ชัด” กำหนดวัตถุประสงค์การนำเสนอ เช่น เพื่อแจ้งให้ทราบ โน้มน้าวใจ ขออนุมัติ</p></div>
+      <div class="pcard"><div class="pletter">A</div><h3>Audience</h3><div class="en">ผู้ฟัง</div><p>กิจกรรม “สวมบทบาทผู้ฟัง” วิเคราะห์ว่ากำลังนำเสนอให้ใครฟัง ครู เพื่อน หรือผู้บริหาร</p></div>
+      <div class="pcard"><div class="pletter">N</div><h3>Needs</h3><div class="en">ความต้องการ</div><p>กิจกรรม “ค้นหาความต้องการ” ระบุว่าผู้ฟังต้องการรู้อะไรและคาดหวังอะไร</p></div>
+      <div class="pcard"><div class="pletter">I</div><h3>Information</h3><div class="en">ข้อมูล</div><p>กิจกรรม “เรียงร้อยข้อมูล” คัดเลือกและจัดลำดับข้อมูล เช่น ข้อมูลบัญชี งบการเงิน ให้สอดคล้องกับ P, A, N</p></div>
+      <div class="pcard"><div class="pletter">C</div><h3>Communication</h3><div class="en">การสื่อสาร</div><p>“คลินิกการสื่อสาร” ฝึกวัจนภาษา การใช้เสียง คำศัพท์ และอวัจนภาษา ภาษากาย การสบตา</p></div>
+    </div>
+    <div class="grid g2">
+      <div class="card"><h3>หน่วยการเรียนรู้ที่สร้างขึ้น</h3><p class="sm" style="margin-top:6px">“Mastering Presentation with PANIC” หน่วยการเรียนรู้เฉพาะกิจที่กำหนดสมรรถนะย่อยและจุดประสงค์การเรียนรู้ชัดเจน สอดคล้องกับมาตรฐานหลักสูตร ปวส.</p></div>
+      <div class="card"><h3>การสอดแทรกคุณลักษณะวิชาชีพบัญชี</h3><p class="sm" style="margin-top:6px">P &amp; I → ความซื่อสัตย์และความรับผิดชอบในการนำเสนอข้อมูล · A &amp; N → การเอาใจใส่ผู้มีส่วนได้ส่วนเสีย · C → ความเป็นมืออาชีพในการสื่อสาร</p></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 8 กิจกรรม -->
+<section class="slide" data-title="การจัดกิจกรรมการเรียนรู้">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">ข้อ 1.3</div><h2>ครูทำอะไร → ผู้เรียนเกิดการเรียนรู้อย่างไร</h2><p>เทคนิคการสอนที่หลากหลายเพื่อให้นักเรียนได้ลงมือปฏิบัติจริง</p></div>
+  <div class="body">
+    <table>
+      <tr><th style="width:20%">ครูจัดกิจกรรม</th><th style="width:40%">ลักษณะกิจกรรม</th><th>สิ่งที่ผู้เรียนได้ฝึก</th></tr>
+      <tr><td class="n">Case Study</td><td>วิเคราะห์คลิปวิดีโอการนำเสนอ เช่น TED Talks หรือ Shark Tank</td><td>ใช้ PANIC เป็นเกณฑ์วิจารณ์งานนำเสนอ</td></tr>
+      <tr><td class="n">Role-Playing</td><td>ฝึกนำเสนอโครงงานในสถานการณ์จำลอง เช่น นำเสนอต่อนักลงทุน</td><td>วิเคราะห์ผู้ฟังและตอบสนองความต้องการ</td></tr>
+      <tr><td class="n">Peer Feedback</td><td>จับกลุ่มผลัดกันนำเสนอ ผู้ฟังให้ข้อเสนอแนะผ่าน “PANIC Feedback Form”</td><td>ให้และรับข้อเสนอแนะเชิงสร้างสรรค์</td></tr>
+      <tr><td class="n">Video Self-Assessment</td><td>ใช้โทรศัพท์มือถืออัดวิดีโอการซ้อมนำเสนอของตนเอง</td><td>วิเคราะห์จุดที่ต้องปรับปรุงด้าน Communication</td></tr>
+    </table>
+    <div class="grid g2">
+      <div class="card"><h3>บรรยากาศชั้นเรียน: Safe Practice Zone</h3><p class="sm" style="margin-top:6px">เน้นย้ำว่าการนำเสนอเป็น “ทักษะ” ที่ต้องฝึกฝน ความผิดพลาดเป็นเรื่องปกติ พร้อมสร้างวัฒนธรรม Constructive Feedback ให้นักเรียนกล้าฝึกพูด</p></div>
+      <div class="card"><h3>ผลลัพธ์ที่คาดหวังกับผู้เรียน</h3><p class="sm" style="margin-top:6px">ได้รับการพัฒนาตามศักยภาพและความแตกต่างระหว่างบุคคล มีนิสัยใฝ่เรียนรู้ มุ่งมั่นในการทำงาน และทำงานร่วมกับผู้อื่นได้ดี</p></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 9 สื่อ -->
+<section class="slide" data-title="สื่อ นวัตกรรม และการวัดผล">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">ข้อ 1.4 – 1.6</div><h2>สื่อ เทคโนโลยี และการวัดประเมินผล</h2><p>เครื่องมือที่สร้างขึ้นและนำมาใช้ในการจัดการเรียนรู้</p></div>
+  <div class="body">
+    <div class="grid g4">
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H4z"/><path d="M8 20h8M12 16v4"/></svg></div><h3>สไลด์ประกอบการสอน</h3><p class="sm" style="margin-top:5px">Google Slides หรือ Canva เรื่อง PANIC Framework</p></div>
+      <div class="card"><div class="ico t"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h5"/></svg></div><h3>PANIC Toolkit</h3><p class="sm" style="margin-top:5px">ใบงาน 5 ชิ้น ให้นักเรียนวางแผนการนำเสนอของตนเอง</p></div>
+      <div class="card"><div class="ico a"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Video Self-Assessment</h3><p class="sm" style="margin-top:5px">อัดวิดีโอการซ้อมนำเสนอเพื่อวิเคราะห์ตนเอง</p></div>
+      <div class="card"><div class="ico r"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h4v8H7zM14 8h3M14 12h3M14 16h3"/></svg></div><h3>Padlet</h3><p class="sm" style="margin-top:5px">รวบรวม “Needs” ของผู้ฟังก่อนการนำเสนอจริง</p></div>
+    </div>
+    <div class="grid g2">
+      <div class="card tint"><h3>การวัดและประเมินผล (1.5)</h3><p class="sm" style="margin-top:6px">Rubric สอดคล้องกับ PANIC ทั้ง 5 ด้าน: ความชัดเจนของ Purpose · การวิเคราะห์ Audience และ Needs · ความครบถ้วนของ Information · ประสิทธิภาพของ Communication และใช้การประเมินตามสภาพจริงจากการนำเสนอโครงงาน แทนการสอบข้อเขียน</p></div>
+      <div class="card tint"><h3>ศึกษา วิเคราะห์ สังเคราะห์ (1.6)</h3><p class="sm" style="margin-top:6px"><b>Analyze:</b> ใช้แบบประเมินตนเองก่อนเรียนวิเคราะห์ว่านักเรียนมีปัญหาจุดใดมากที่สุด · <b>Synthesize:</b> นำคะแนน Rubric และผลหลังเรียนมาเปรียบเทียบ เพื่อสรุปว่า PANIC ช่วยแก้ปัญหาได้จริงหรือไม่</p></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 10 ตัวชี้วัด -->
+<section class="slide" data-title="ตัวชี้วัดและค่าเป้าหมาย">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">Indicators</div><h2>ค่าเป้าหมายของตัวชี้วัดตามข้อตกลง</h2>
+    <p>กราฟแสดง <b>ค่าเป้าหมาย (Target)</b> ที่ระบุไว้ในเอกสาร PA หน่วยเป็นร้อยละของผู้เรียน</p></div>
+  <div class="body">
+    <div class="card">
+      <h3 style="margin-bottom:14px">ร้อยละของผู้เรียนตามค่าเป้าหมายที่กำหนด (หน่วย: %)</h3>
+      <div class="bars">
+        <div class="bar-row"><div class="name">ผู้เรียนมีความรู้ผ่านเกณฑ์การประเมินของสถานศึกษา</div><div class="track"><div class="fill" data-v="70">70%</div></div></div>
+        <div class="bar-row"><div class="name">ผู้เรียนมีผลสัมฤทธิ์สูงกว่าที่สถานศึกษากำหนด</div><div class="track"><div class="fill" data-v="70">70%</div></div></div>
+        <div class="bar-row"><div class="name">ผู้เรียนมีเจตคติที่ดีต่อรายวิชาภาษาอังกฤษ</div><div class="track"><div class="fill" data-v="70">70%</div></div></div>
+        <div class="bar-row"><div class="name">ผลประเมินด้านคุณลักษณะอันพึงประสงค์และสมรรถนะสำคัญ</div><div class="track"><div class="fill" data-v="70">70%</div></div></div>
+        <div class="bar-row"><div class="name">ผู้เรียนตรวจสอบและติดตามรายละเอียดรายวิชาที่เรียนได้</div><div class="track"><div class="fill teal" data-v="80">80%</div></div></div>
+        <div class="bar-row"><div class="name">ผู้เรียนได้รับการคัดกรองตามระบบดูแลช่วยเหลือผู้เรียน</div><div class="track"><div class="fill teal" data-v="80">80%</div></div></div>
+        <div class="bar-row"><div class="name">ผู้เรียนมีข้อมูลในระบบสารสนเทศครบถ้วนรายบุคคล</div><div class="track"><div class="fill teal" data-v="100">100%</div></div></div>
+      </div>
+      <div class="axis"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+      <div class="legend"><span><i style="background:#1D4E89"></i>ด้านการจัดการเรียนรู้ (เป้าหมาย 70%)</span><span><i style="background:#1F8E80"></i>ด้านการส่งเสริมและสนับสนุนการจัดการเรียนรู้ (80–100%)</span></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 11 ด้าน 2-3 -->
+<section class="slide" data-title="ด้านที่ 2 และด้านที่ 3">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">ส่วนที่ 1 · ด้านที่ 2 และ 3</div><h2>การส่งเสริมการเรียนรู้ และการพัฒนาตนเองและวิชาชีพ</h2><p>งานที่ดำเนินการควบคู่กับด้านการจัดการเรียนรู้</p></div>
+  <div class="body">
+    <div class="grid g2" style="align-items:start">
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h4"/></svg></div>
+        <h3>ด้านที่ 2 · การส่งเสริมและสนับสนุนการจัดการเรียนรู้</h3><ul>
+        <li>จัดทำข้อมูลเวลาเรียนและคะแนนของรายวิชาที่สอนในระบบ EDR</li>
+        <li>จัดทำข้อมูลนักเรียนรายวิชา 20000-1204 ระดับ ปวช.2</li>
+        <li>คัดกรองนักเรียนตามระบบดูแลช่วยเหลือ (SDQ) จัดโฮมรูม และเยี่ยมบ้าน</li>
+        <li>เผยแพร่ผลการประเมินผู้เรียนต่อผู้ปกครองรายบุคคล</li>
+        <li>ร่วมพัฒนาหลักสูตรสถานศึกษา วิจัยในชั้นเรียน และจัดทำ SAR</li>
+        <li>ประสานความร่วมมือกับผู้ปกครอง ภาคีเครือข่าย และสถานประกอบการ</li></ul></div>
+      <div class="card"><div class="ico t"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
+        <h3>ด้านที่ 3 · การพัฒนาตนเองและวิชาชีพ</h3><ul>
+        <li>พัฒนาทักษะการใช้ภาษาอังกฤษและเทคโนโลยีดิจิทัลเพื่อการศึกษา</li>
+        <li>เข้าร่วมการอบรมทั้งในและนอกวิทยาลัย รวมถึงการอบรมออนไลน์</li>
+        <li>เข้าร่วมกิจกรรมแลกเปลี่ยนเรียนรู้ภายในแผนกวิชา</li>
+        <li>แลกเปลี่ยนเรียนรู้ทางวิชาชีพผ่านการนิเทศและสังเกตการสอน</li>
+        <li>นำความรู้มาพัฒนาการจัดการเรียนรู้ คุณภาพผู้เรียน และนวัตกรรม</li></ul></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 12 Before/After -->
+<section class="slide" data-title="เส้นทางการเปลี่ยนแปลง">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">Learner Outcome</div><h2>เส้นทางการเปลี่ยนแปลงของผู้เรียน</h2><p>สภาพเดิม → สิ่งที่ดำเนินการ → ผลลัพธ์ที่คาดหวังตามเอกสาร</p></div>
+  <div class="body">
+    <div class="ba">
+      <div class="col before"><h3 style="color:#8E3936">Before · สภาพเดิม</h3><ul>
+        <li>ขาดการวางแผนการนำเสนออย่างเป็นระบบ</li><li>ระบุวัตถุประสงค์ไม่ชัดเจน</li>
+        <li>ไม่วิเคราะห์ผู้ฟังและความต้องการ</li><li>นำเสนอแบบ “เทข้อมูล”</li><li>ผู้ฟังไม่เข้าใจประเด็นสำคัญ</li></ul></div>
+      <div class="arrow">→</div>
+      <div class="col"><h3>Intervention · สิ่งที่ดำเนินการ</h3><ul>
+        <li>หน่วยการเรียนรู้ “Mastering Presentation with PANIC”</li><li>แผนการจัดการเรียนรู้ 5 แผนตามโมดูล P–A–N–I–C</li>
+        <li>ชุดใบงาน PANIC Toolkit 5 ชิ้น</li><li>Case Study · Role-Playing · Peer Feedback</li><li>วิดีโอประเมินตนเอง และ Padlet เก็บ Needs</li></ul></div>
+      <div class="arrow">→</div>
+      <div class="col after"><h3 style="color:#146F63">After · ผลลัพธ์ที่คาดหวัง</h3><ul>
+        <li>วางแผนการนำเสนอได้อย่างเป็นระบบ</li><li>อธิบาย P, A, N, I และแผน C ของตนเองได้</li>
+        <li>เปลี่ยนเป็น “การสื่อสารเชิงกลยุทธ์”</li><li>ไม่น้อยกว่าร้อยละ 70 ผ่านเกณฑ์ระดับ “ดี” ขึ้นไป</li><li>มีความมั่นใจและเจตคติที่ดีเพิ่มขึ้น</li></ul></div>
+    </div>
+    <div class="note">คอลัมน์ After เป็น <b>ผลลัพธ์ที่คาดหวัง</b> ตามข้อ 3 ของส่วนที่ 2 เนื่องจากเอกสารต้นฉบับเป็นข้อตกลง (PA 1/ส)</div>
+  </div>
+ </div>
+</section>
+
+<!-- 13 หลักฐาน -->
+<section class="slide" data-title="หลักฐานการดำเนินงาน">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">Evidence</div><h2>หลักฐานการดำเนินงาน</h2><p>รายการหลักฐานที่ระบุไว้ในเอกสาร และส่วนที่รอเติมข้อมูลจริงเมื่อสิ้นรอบการประเมิน</p></div>
+  <div class="body">
+    <div class="grid g4">
+      <div class="card"><h3 style="font-size:17.5px">แผนการจัดการเรียนรู้ 5 แผน</h3></div>
+      <div class="card"><h3 style="font-size:17.5px">ใบงาน PANIC Toolkit 5 ชิ้น</h3></div>
+      <div class="card"><h3 style="font-size:17.5px">PANIC Presentation Rubric</h3></div>
+      <div class="card"><h3 style="font-size:17.5px">PANIC Feedback Form</h3></div>
+      <div class="card"><h3 style="font-size:17.5px">แบบประเมินตนเองก่อน–หลังเรียน</h3></div>
+      <div class="card"><h3 style="font-size:17.5px">สไลด์และคลิปวิดีโอตัวอย่าง</h3></div>
+      <div class="card"><h3 style="font-size:17.5px">วิดีโอการซ้อมนำเสนอของนักเรียน</h3></div>
+      <div class="card"><h3 style="font-size:17.5px">ข้อมูลในระบบ EDR และรายงานผลการเรียน</h3></div>
+    </div>
+    <div class="grid g3">
+      <div class="empty"><div class="state">รอข้อมูลจริง</div><h3>คะแนนก่อน–หลังเรียน</h3><p class="sm sub" style="margin-top:4px">เอกสารระบุเพียงแผนการเก็บและเปรียบเทียบคะแนน Pre/Post-Test</p></div>
+      <div class="empty"><div class="state">รอข้อมูลจริง</div><h3>จำนวนผู้เรียนกลุ่มเป้าหมาย</h3><p class="sm sub" style="margin-top:4px">ยังไม่ระบุจำนวนนักเรียน ปวส.1 การบัญชีในเอกสาร</p></div>
+      <div class="empty"><div class="state">รอข้อมูลจริง</div><h3>ผลสัมฤทธิ์ปลายภาค</h3><p class="sm sub" style="margin-top:4px">เติมเมื่อประเมินด้วย Rubric จากการนำเสนอโครงงานจริงเสร็จสิ้น</p></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 14 Impact -->
+<section class="slide" data-title="ผลกระทบ 3 ระดับ">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">Impact</div><h2>ผลกระทบที่มุ่งหวัง 3 ระดับ</h2><p>สรุปจากผลลัพธ์และงานที่ระบุไว้ในเอกสาร</p></div>
+  <div class="body">
+    <div class="grid g3">
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2"/><path d="M5 20a7 7 0 0 1 14 0"/></svg></div><h3>ผู้เรียน</h3><ul>
+        <li>วางแผนและสื่อสารการนำเสนออย่างเป็นระบบ</li><li>ได้รับการพัฒนาตามความแตกต่างระหว่างบุคคล</li>
+        <li>มีคุณลักษณะอันพึงประสงค์และสมรรถนะสำคัญตามหลักสูตร</li><li>มีความมั่นใจและเจตคติที่ดีต่อภาษาอังกฤษ</li></ul></div>
+      <div class="card"><div class="ico t"><svg viewBox="0 0 24 24"><path d="M4 6h16v11H4z"/><path d="M9 21h6M12 17v4"/></svg></div><h3>ครูผู้สอน</h3><ul>
+        <li>ได้นวัตกรรม PANIC Framework พร้อมชุดเครื่องมือและ Rubric</li>
+        <li>พัฒนาทักษะภาษาอังกฤษและเทคโนโลยีดิจิทัลต่อเนื่อง</li>
+        <li>แลกเปลี่ยนเรียนรู้ผ่าน PLC และการนิเทศการสอน</li></ul></div>
+      <div class="card"><div class="ico a"><svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M10 21v-6h4v6"/></svg></div><h3>สถานศึกษา</h3><ul>
+        <li>มีระบบข้อมูลสารสนเทศผู้เรียนรายบุคคลที่ครบถ้วน</li>
+        <li>ระบบดูแลช่วยเหลือผู้เรียนดำเนินการต่อเนื่อง</li>
+        <li>ร่วมพัฒนาหลักสูตร งานวิจัยในชั้นเรียน และการจัดทำ SAR</li></ul></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 15 ความพึงพอใจ -->
+<section class="slide" data-title="ผลประเมินความพึงพอใจ">
+ <div class="fit">
+  <div class="head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px">
+    <div><div class="eyebrow">Student Feedback Dashboard</div><h2>ผลการสำรวจความคิดเห็นของนักเรียนหลังเรียน</h2>
+      <p>ค่าเฉลี่ยรายด้าน มาตราส่วนประมาณค่า 5 ระดับ (1 = น้อยที่สุด, 5 = มากที่สุด)</p></div>
+    <span class="badge">ข้อมูลจากแบบสอบถาม</span>
+  </div>
+  <div class="body">
+    <div class="grid" style="grid-template-columns:270px 1fr;gap:18px">
+      <div class="score">
+        <div class="of">ความพึงพอใจโดยรวม</div>
+        <div class="big">4.47</div>
+        <div class="of">จากคะแนนเต็ม 5.00</div>
+        <div class="lv">ระดับ ดี – ดีมาก</div>
+        <div class="cap">ทุกด้านมีค่าเฉลี่ยอยู่ระหว่าง 4.21 – 4.60 ซึ่งอยู่ในระดับ ดี ถึง ดีมาก</div>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:12px">ค่าเฉลี่ยความคิดเห็นรายด้าน (หน่วย: คะแนนเฉลี่ย จาก 5.00)</h3>
+        <div class="bars">
+          <div class="bar-row" style="grid-template-columns:250px 1fr"><div class="name">ความสนุกในการเรียน</div><div class="track"><div class="fill teal" data-v="92">4.60 · ดีมาก</div></div></div>
+          <div class="bar-row" style="grid-template-columns:250px 1fr"><div class="name">ความพึงพอใจโดยรวม</div><div class="track"><div class="fill teal" data-v="91.4">4.57 · ดีมาก</div></div></div>
+          <div class="bar-row" style="grid-template-columns:250px 1fr"><div class="name">การมีส่วนร่วมในกิจกรรม</div><div class="track"><div class="fill teal" data-v="91">4.55 · ดีมาก</div></div></div>
+          <div class="bar-row" style="grid-template-columns:250px 1fr"><div class="name">ความสนใจในการเรียน</div><div class="track"><div class="fill teal" data-v="90.4">4.52 · ดีมาก</div></div></div>
+          <div class="bar-row" style="grid-template-columns:250px 1fr"><div class="name">ประโยชน์ที่ได้รับ</div><div class="track"><div class="fill" data-v="89.6">4.48 · ดี</div></div></div>
+          <div class="bar-row" style="grid-template-columns:250px 1fr"><div class="name">ความเข้าใจในบทเรียน</div><div class="track"><div class="fill" data-v="89">4.45 · ดี</div></div></div>
+          <div class="bar-row" style="grid-template-columns:250px 1fr"><div class="name">ความเหมาะสมของกิจกรรม</div><div class="track"><div class="fill" data-v="87.6">4.38 · ดี</div></div></div>
+          <div class="bar-row" style="grid-template-columns:250px 1fr"><div class="name">ความมั่นใจในการใช้ภาษาอังกฤษ</div><div class="track"><div class="fill amber" data-v="84.2">4.21 · ดี</div></div></div>
+        </div>
+        <div class="legend"><span><i style="background:#1F8E80"></i>ดีมาก (4.50–5.00)</span><span><i style="background:#1D4E89"></i>ดี (4.30–4.49)</span><span><i style="background:#C98A1E"></i>ดี — ควรพัฒนาต่อ (ต่ำกว่า 4.30)</span></div>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 16 เสียงสะท้อน -->
+<section class="slide" data-title="เสียงสะท้อนจากนักเรียน">
+ <div class="fit">
+  <div class="head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px">
+    <div><div class="eyebrow">Student Voice</div><h2>ข้อความสะท้อนผลจากนักเรียน</h2>
+      <p>สรุปประเด็นจากคำตอบปลายเปิดของแบบสอบถามหลังเรียน (ไม่เปิดเผยข้อมูลส่วนบุคคล)</p></div>
+    <span class="badge">ข้อมูลตัวอย่าง (Mock-up) — รอแทนที่ด้วยผลจริง</span>
+  </div>
+  <div class="body">
+    <div class="quote">
+      <span class="mark">“</span>
+      <p>นักเรียนส่วนใหญ่สะท้อนว่ากิจกรรมตามกรอบ PANIC ช่วยให้วางแผนการนำเสนอได้เป็นขั้นตอนและเข้าใจเนื้อหาได้ง่ายขึ้น โดยเฉพาะการได้ฝึกปฏิบัติจริงและการได้รับข้อเสนอแนะจากเพื่อน ส่วนด้านที่ต้องการฝึกเพิ่มเติมมากที่สุดคือความมั่นใจในการใช้ภาษาอังกฤษขณะนำเสนอ</p>
+    </div>
+    <div class="grid g4" style="gap:14px">
+      <div class="vcard"><p>“พอรู้ว่าใครฟังและเขาอยากรู้อะไร ก็เลือกข้อมูลได้ง่ายขึ้นมาก ไม่ต้องพูดทุกอย่าง”</p><div class="who">นักเรียน ปวส.1 การบัญชี</div></div>
+      <div class="vcard"><p>“ชอบตอนอัดวิดีโอตัวเองที่สุด เพิ่งรู้ว่าเราพูดเร็วและไม่ค่อยสบตาคนฟัง”</p><div class="who">นักเรียน ปวส.1 การบัญชี</div></div>
+      <div class="vcard"><p>“เพื่อนช่วยติแบบมีหัวข้อชัดเจน เลยไม่รู้สึกว่าโดนว่า แต่รู้ว่าต้องแก้ตรงไหน”</p><div class="who">นักเรียน ปวส.1 การบัญชี</div></div>
+      <div class="vcard"><p>“ยังไม่ค่อยมั่นใจเรื่องคำศัพท์ อยากให้มีเวลาซ้อมพูดภาษาอังกฤษเพิ่มอีก”</p><div class="who">นักเรียน ปวส.1 การบัญชี</div></div>
+    </div>
+    <div>
+      <span class="theme">สนุกและได้ลงมือทำ</span><span class="theme">เข้าใจง่ายขึ้น</span><span class="theme">เลือกข้อมูลเป็น</span>
+      <span class="theme">กล้านำเสนอมากขึ้น</span><span class="theme">อยากฝึกภาษาอังกฤษเพิ่ม</span>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- 17 Reflection -->
+<section class="slide" data-title="Reflection">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">Reflection</div><h2>สิ่งที่ได้เรียนรู้จากการดำเนินงาน</h2><p>สะท้อนผลจากกระบวนการออกแบบและดำเนินการพัฒนางานตามข้อตกลง</p></div>
+  <div class="body">
+    <div class="grid g2">
+      <div class="card"><h3>สิ่งที่ทำได้ผล (What worked?)</h3><p class="sm" style="margin-top:6px">ใช้จุดแข็งของผู้เรียนสายบัญชีด้านการจัดการข้อมูลเป็นฐาน แล้วต่อยอดไปยังจุดอ่อนคือการสื่อสาร ทำให้การออกแบบการสอนตรงกับสภาพจริงของผู้เรียน</p></div>
+      <div class="card"><h3>สิ่งที่เปลี่ยนไป (What changed?)</h3><p class="sm" style="margin-top:6px">เปลี่ยนการวัดผลจากการสอบข้อเขียน เป็นการประเมินตามสภาพจริงด้วย Rubric 5 ด้าน จากการนำเสนอโครงงานจริงของนักเรียน</p></div>
+      <div class="card"><h3>ความท้าทาย (What was challenging?)</h3><p class="sm" style="margin-top:6px">นักเรียนเคยชินกับการ “เทข้อมูล” จึงต้องสร้างพื้นที่ปลอดภัยสำหรับการฝึกฝน เพื่อให้กล้าพูดและรับฟังข้อเสนอแนะ</p></div>
+      <div class="card"><h3>สิ่งที่ต้องพัฒนาต่อ (What to improve?)</h3><p class="sm" style="margin-top:6px">วิเคราะห์ผล Rubric เพื่อระบุองค์ประกอบที่ยังต้องพัฒนา โดยเฉพาะ C – Communication และความมั่นใจในการใช้ภาษาอังกฤษ</p></div>
+    </div>
+    <div class="quote"><span class="mark">“</span><p>ผู้เรียนมีจุดแข็งในการจัดการ “ข้อมูล” เพราะคุ้นเคยกับตัวเลขทางการบัญชี แต่มีจุดอ่อนชัดเจนในการ “สื่อสาร” ข้อมูลเหล่านั้นออกมา — ข้อค้นพบนี้คือจุดตั้งต้นของนวัตกรรมทั้งหมด</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 18 Next Step -->
+<section class="slide" data-title="Next Step">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">Next Step</div><h2>แผนการพัฒนาต่อไป</h2><p>โรดแมปที่ต่อยอดจากขั้นตอน Evaluate &amp; Reflect</p></div>
+  <div class="body">
+    <div class="flow" style="grid-template-columns:repeat(4,1fr)">
+      <div class="step"><b>01</b><h3>Improve</h3><p>ปรับใบงานและเกณฑ์ Rubric ตามจุดที่นักเรียนได้คะแนนต่ำที่สุด โดยเฉพาะด้าน Communication</p></div>
+      <div class="step"><b>02</b><h3>Extend</h3><p>เพิ่มเวลาฝึกพูดภาษาอังกฤษและคลังคำศัพท์สำหรับการนำเสนอ ตามเสียงสะท้อนของนักเรียน</p></div>
+      <div class="step"><b>03</b><h3>Scale</h3><p>ขยายการใช้ PANIC ไปยังรายวิชาภาษาอังกฤษอื่นที่รับผิดชอบ ทั้งระดับ ปวช. และ ปวส.</p></div>
+      <div class="step"><b>04</b><h3>Sustain</h3><p>นำผลเข้าสู่วง PLC และกิจกรรมนิเทศการสอน เพื่อแลกเปลี่ยนและพัฒนาอย่างต่อเนื่อง</p></div>
+    </div>
+    <div class="note">ขั้นตอน Improve และ Scale อ้างอิงจากข้อ 6 “ประเมินและสะท้อนผล” และข้อ 1.6 ของเอกสาร ส่วน Sustain อ้างอิงจากงานด้านการพัฒนาตนเองและวิชาชีพ (PLC และการนิเทศการสอน)</div>
+  </div>
+ </div>
+</section>
+
+<!-- 19 สรุป -->
+<section class="slide" data-title="สรุปผู้บริหาร">
+ <div class="fit">
+  <div class="head"><div class="eyebrow">Executive Summary</div><h2>สรุปภาพรวมข้อตกลงในการพัฒนางาน</h2></div>
+  <div class="body">
+    <div class="grid g4">
+      <div class="card" style="border-top:4px solid var(--red)"><h3>Problem</h3><p class="sm" style="margin-top:6px">ผู้เรียน ปวส.1 การบัญชี นำเสนอแบบ “เทข้อมูล” ขาดการวางแผนอย่างเป็นระบบ</p></div>
+      <div class="card" style="border-top:4px solid var(--blue)"><h3>Action</h3><p class="sm" style="margin-top:6px">PANIC Framework 5 โมดูล แผนการสอน 5 แผน ใบงาน 5 ชิ้น และ Active Learning</p></div>
+      <div class="card" style="border-top:4px solid var(--blue2)"><h3>Evidence</h3><p class="sm" style="margin-top:6px">PANIC Rubric การประเมินตามสภาพจริง แบบประเมินก่อน–หลังเรียน และแบบสอบถามความพึงพอใจ</p></div>
+      <div class="card" style="border-top:4px solid var(--teal)"><h3>Impact</h3><p class="sm" style="margin-top:6px">เป้าหมายไม่น้อยกว่าร้อยละ 70 ผ่านเกณฑ์ระดับ “ดี” ขึ้นไป และสื่อสารเชิงกลยุทธ์ได้</p></div>
+    </div>
+    <div class="quote"><span class="mark">“</span><p>คุณค่าของข้อตกลงฉบับนี้อยู่ที่การเปลี่ยนการนำเสนอจาก “การพูดให้จบ” เป็น “การสื่อสารที่มีเป้าหมายและมีผู้ฟังอยู่ในใจ” ซึ่งเป็นทักษะที่ผู้เรียนสายบัญชีจะใช้ต่อไปในสถานประกอบการจริง</p></div>
+    <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+      <a class="drive" style="margin-top:0" href="https://drive.google.com/file/d/1O6Im4-jYQ4-wUshZ7pXAIQ4EO8FXMvqr/view?usp=sharing" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M14 3v5h5"/><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9l6 6v10a2 2 0 0 1-2 2z"/><path d="M9 14h6"/><path d="M9 17h4"/></svg>
+        <span>เปิดเอกสาร PA ฉบับเต็ม<small>เปิดใน Google Drive แท็บใหม่</small></span>
+      </a>
+      <p class="sm sub">ผู้จัดทำ: นายศิวกานต์ เชิดบุญเรือง · วิทยาลัยอาชีวศึกษาพระนครศรีอยุธยา<br>ผู้อำนวยการสถานศึกษา: นายณัฐพงศ์ แก้ววงศ์</p>
+    </div>
+  </div>
+ </div>
+</section>
+
+</div></div>
+
+<div id="menu" aria-hidden="true">
+  <button class="close" id="menuClose">ปิดเมนู</button>
+  <h2 style="color:#fff">ไปยังสไลด์</h2>
+  <ol id="menuList"></ol>
+</div>
+
+<div id="bar">
+  <button id="home" title="กลับสไลด์แรก" aria-label="กลับสไลด์แรก"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></button>
+  <button id="menuBtn" class="txt"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>สารบัญ</span></button>
+  <button id="prev" class="txt"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg><span>ก่อนหน้า</span></button>
+  <button id="next" class="txt"><span>ถัดไป</span><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  <span id="counter">1 / 1</span>
+  <button id="full" title="เต็มจอ" aria-label="เต็มจอ"><svg viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+</div>
+
+<script>
+(function(){
+  var W = 1280, H = 720;
+  var stage = document.getElementById('stage');
+  var viewport = document.getElementById('viewport');
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var i = 0, counter = document.getElementById('counter'), progress = document.getElementById('progress');
+  var menu = document.getElementById('menu');
+
+  /* ปรับขนาดเวที 16:9 ให้พอดีจอเสมอ */
+  function resize(){
+    var s = Math.min(viewport.clientWidth / W, viewport.clientHeight / H);
+    stage.style.transform = 'scale(' + s + ')';
+  }
+
+  /* ย่อเนื้อหาอัตโนมัติถ้าล้นกรอบสไลด์ เพื่อไม่ให้ถูกตัด */
+  function autofit(sl){
+    var f = sl.querySelector('.fit');
+    if (!f) return;
+    f.style.transform = 'none'; f.style.width = '100%';
+    var avail = sl.clientHeight - parseFloat(getComputedStyle(sl).paddingTop) - parseFloat(getComputedStyle(sl).paddingBottom);
+    var need = f.scrollHeight;
+    if (need > avail + 1){
+      var k = Math.max(0.62, avail / need);
+      f.style.transform = 'scale(' + k + ')';
+      f.style.width = (100 / k) + '%';
+    }
+  }
+  function autofitAll(){
+    slides.forEach(function(sl){
+      var was = sl.classList.contains('active');
+      if (!was){ sl.style.display = 'flex'; sl.style.visibility = 'hidden'; }
+      autofit(sl);
+      if (!was){ sl.style.display = ''; sl.style.visibility = ''; }
+    });
+  }
+
+  function animateBars(el){
+    var fills = el.querySelectorAll('.fill');
+    Array.prototype.forEach.call(fills, function(f){
+      f.style.width = '0%';
+      setTimeout(function(){ f.style.width = f.getAttribute('data-v') + '%'; }, 120);
+    });
+  }
+  function show(n){
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function(s, k){ s.classList.toggle('active', k === i); });
+    counter.textContent = (i + 1) + ' / ' + slides.length;
+    progress.style.width = ((i + 1) / slides.length * 100) + '%';
+    animateBars(slides[i]);
+  }
+
+  document.getElementById('next').onclick = function(){ show(i + 1); };
+  document.getElementById('prev').onclick = function(){ show(i - 1); };
+  document.getElementById('home').onclick = function(){ show(0); };
+  document.getElementById('full').onclick = function(){
+    if (document.fullscreenElement) document.exitFullscreen();
+    else if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+  };
+
+  var list = document.getElementById('menuList');
+  slides.forEach(function(s, idx){
+    var li = document.createElement('li'), b = document.createElement('button');
+    b.innerHTML = '<span>' + (idx + 1) + '</span>' + (s.getAttribute('data-title') || ('สไลด์ ' + (idx + 1)));
+    b.onclick = function(){ menu.classList.remove('open'); show(idx); };
+    li.appendChild(b); list.appendChild(li);
+  });
+  document.getElementById('menuBtn').onclick = function(){ menu.classList.add('open'); };
+  document.getElementById('menuClose').onclick = function(){ menu.classList.remove('open'); };
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' '){ e.preventDefault(); show(i + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp'){ e.preventDefault(); show(i - 1); }
+    else if (e.key === 'Home'){ show(0); }
+    else if (e.key === 'End'){ show(slides.length - 1); }
+    else if (e.key === 'Escape'){ menu.classList.remove('open'); }
+    else if (e.key === 'f' || e.key === 'F'){ document.getElementById('full').click(); }
+  });
+
+  var x0 = null, y0 = null;
+  document.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, {passive:true});
+  document.addEventListener('touchend', function(e){
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+    if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy)) show(dx < 0 ? i + 1 : i - 1);
+    x0 = null;
+  }, {passive:true});
+
+  window.addEventListener('resize', function(){ resize(); autofitAll(); });
+  resize(); autofitAll(); show(0);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ autofitAll(); animateBars(slides[i]); });
+  setTimeout(function(){ autofitAll(); }, 600);
+})();
+</script>
+</body>
+</html>
